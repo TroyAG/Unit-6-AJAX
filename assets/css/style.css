@@ -11,8 +11,12 @@ h2 {
     
 }
 
-.btn{
+#addmovie{
     margin-left: 72%;
+    background-color: cadetblue;
+    border: 0px;
+}
+.btn {
     background-color: cadetblue;
     border: 0px;
 }

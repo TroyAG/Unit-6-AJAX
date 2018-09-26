@@ -3,8 +3,8 @@ $(document).ready(function() {
   var topics = [];
   
     //Function with AJAX call to GIPHY; Q parameterc for API link set to search term, limit 10 results
-    //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
-     function displaymovieShow() {
+    //Create div with respective image sources and attributes
+     function displaymovieGif() {
   
     var x = $(this).data("search");
     console.log(x);
@@ -58,6 +58,6 @@ $(document).ready(function() {
       }
     }
     displayButtons();
-    //Click event on button with id of "show" executes displayNetflixShow function
-    $(document).on("click", "#movie", displaymovieShow);  
+    //Click event on button with id of "movie" executes displayMovieGif function
+    $(document).on("click", "#movie", displaymovieGif);  
   });

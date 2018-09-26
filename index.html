@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX Giphy buttons</title>
+  <meta charset="utf-8">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="wholeThing">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="movie" data-search="Ace Ventura">Ace Ventura</button>
+      <button class="btn btn-primary" id="movie" data-search="Jurassic Park">Jurassic Park</button>
+      <button class="btn btn-primary" id="movie" data-search="The Thing">The Thing</button>
+      <button class="btn btn-primary" id="movie" data-search="The Hangover">The Hangover</button>
+      <button class="btn btn-primary" id="movie" data-search="Step Brothers">Step Brothers</button> 
+      <button class="btn btn-primary" id="movie" data-search="Star Wars">Star Wars</button>
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+<h2>Search for a movie.</h2>
+<form class="form-inline" id="movieSearch">
+  <div class="form-group">
+   
+    <input type="text" id="movieInput">
+  </div>
+</form>
+  <!-- Button triggers movie to be added -->
+  <input class="btn btn-primary" id="addmovie" type="submit" value="Submit">
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
